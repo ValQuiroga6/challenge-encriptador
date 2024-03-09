@@ -81,6 +81,7 @@ footer{
 }
 
 @media (max-width:768px){
+
     main{
         flex-direction: column;
     }
@@ -91,28 +92,46 @@ footer{
     }
 
     .box-left {
-        min-height:50vh;
+        min-height:60vh;
+        justify-content: space-between;
     }
 
     .box-right{
-        min-height: 30vh;
+        min-height: 20vh;
     }
 
     button{
-        width: 90%;
+        width: 40%;
     }
 
+    .button-group{
+        width: 100%;
+        justify-content: space-around;
+    
+    }
+
+    .img-muñeco{
+        display: none;
+    }
+}
+
+@media (max-width:480px){
     .button-group{
         flex-direction: column;
         width: 100%;
         padding-left: 5%;
     }
 
+    main{
+        flex-direction: column;
+    }
+
+    button{
+        width: 90%;
+    }
+
     .btn-white{
         margin-top: 10px;
     }
 
-    .img-muñeco{
-        display: none;
-    }
 }
