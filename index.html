@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
     <title>Encriptador</title>
 </head>
 <body>
@@ -13,22 +12,24 @@
     </header>
     <main>
         <section class="box-left">
-            <input type="text" placeholder="Ingrese el texto aquí">
+            <input type="text" placeholder="Ingrese el texto aquí" autocomplete="off" id="input">
             <div>
                 <span><img src="img/bi_exclamation-circle-fill.png">  Solo letras minúsculas y sin acentos.</span>
                 <div class="button-group">
-                    <button type="submit" class="btn-blue">Encriptar</button>
-                    <button type="submit" class="btn-white">Desencriptar</button>
+                    <button type="submit" class="btn-blue" id="button-encriptar">Encriptar</button>
+                    <button type="submit" class="btn-white" id="button-desencriptar">Desencriptar</button>
                 </div>
             </div>
         </section>
         <section class="box-right">
-            <img src="img/Muñeco.png" class="img-muñeco">
-            <h2>Ningún mensaje fue encontrado.</h2>
-            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
-            <button class="btn-blue">Copiar</button>
+            <img src="img/Muñeco.png" class="img-muñeco" id="img-person">
+            <h2 id="title">Ningún mensaje fue encontrado.</h2>
+            <p id="text">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <h3 hidden id="result"></h3>
+            <button class="btn-blue" id="button-copiar" onclick="copiar()">Copiar</button>
         </section>
     </main>
     <footer>Valentina Quiroga - 2024 &copy;</footer>
+    <script src="app.js"></script>
 </body>
 </html>
